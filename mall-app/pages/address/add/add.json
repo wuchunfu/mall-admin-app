@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-area": "@vant/weapp/area/index",
+    "van-button": "@vant/weapp/button/index"
+  },
+  "navigationBarTitleText": "添加地址"
+}

@@ -1,0 +1,13 @@
+<!--pages/login/login.wxml-->
+<view class="view-login">
+      <van-image
+      round
+      width="5rem"
+      height="5rem"
+      src="/images/logo.png"
+    />
+      <van-button custom-class="login-button" type="primary" bindtap="userLogin" icon="wechat" round>微信授权登录</van-button>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

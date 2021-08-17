@@ -1,0 +1,31 @@
+<!--pages/tabbar/cart/cart.wxml-->
+<view>
+  <van-swipe-cell
+    wx:for="{{ cartItem }}"
+    wx:key="{{ item.id }}"
+    right-width="{{ 65 }}">
+      <van-card
+        bindtap="onClick"
+        id="{{ item.id }}"
+        custom-class="goods-card"
+        name="{{ item.id }}"
+        title="{{ item.title }}"
+        num="1"
+        price="{{ item.price }}"
+        thumb="{{ item.imageUrl }}"
+      />
+      <view slot="right" id="{{ item.id }}" bindtap="onClickDelete">删除</view>
+      </van-swipe-cell>
+<van-submit-bar
+custom-class="submit-bar"
+  price="{{ totalPrice }}"
+  button-text="提交订单"
+  bind:submit="onClickButton"
+  tip="{{ true }}"
+  bindtap="submitOrder"
+>
+</van-submit-bar>
+<van-empty wx:if="{{show}}" description="{{description}}" />
+<van-dialog id="van-dialog" />
+<view style="height: 100px;"></view>
+</view>

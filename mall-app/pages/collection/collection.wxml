@@ -1,0 +1,18 @@
+<!--pages/collection/collection.wxml-->
+<view>
+<block wx:for="{{product}}">
+<van-card
+  id="{{ item.id }}"
+  bindtap="onClick"
+  price="{{item.price}}"
+  title="{{item.title}}"
+  custom-class="goods-card"
+  thumb="{{ item.imageUrl }}"
+/>
+</block>
+<van-empty wx:if="{{show}}" description="暂无收藏" />
+<view class="view-bottom">
+    <van-button type="danger" custom-class="button" round bind:click="deleteAll">删除全部</van-button>
+  </view>
+  <view style="height: 100px;"></view>
+</view>

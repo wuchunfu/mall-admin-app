@@ -1,0 +1,8 @@
+/* pages/address/add/add.wxss */
+page{
+  background-color: #F2F2F2;
+}
+.button{
+  width: 94%;
+  margin: 3%;
+}

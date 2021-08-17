@@ -1,0 +1,26 @@
+/* pages/tabbar/mine/mine.wxss */
+page{
+  background-color: #F2F2F2;
+}
+.view-avatar{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 6% 0% 18% 0%;
+  background-color: #1989FB;
+}
+.grid-order{
+  width: 94%;
+  position: absolute;
+  top: -36px;
+  margin: 0% 3%;
+  background-color: white;
+  border-radius: 10px;
+}
+.grid-service{
+  width: 94%;
+  height: auto;
+  margin: -6% 3% 0% 3%;
+  background-color: white;
+  border-radius: 10px;
+}

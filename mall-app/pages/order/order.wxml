@@ -1,0 +1,15 @@
+<!--pages/order/order.wxml-->
+<view>
+<block wx:for="{{product}}">
+<van-card
+  id="{{ item.id }}"
+  bindtap="onClick"
+  price="{{item.price}}"
+  title="{{item.title}}"
+  custom-class="goods-card"
+  thumb="{{ item.imageUrl }}"
+/>
+</block>
+<van-empty wx:if="{{show}}" description="{{description}}" />
+<view style="height: 100px;"></view>
+</view>

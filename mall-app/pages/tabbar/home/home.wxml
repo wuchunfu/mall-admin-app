@@ -1,0 +1,15 @@
+<!--pages/tabbar/home/home.wxml-->
+<view>
+  <van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+  <block wx:for="{{product}}" wx:key="{{item.id}}">
+    <view class="view-card" id="{{item.id}}" bindtap="onClick">
+      <van-image width="8rem" height="8rem" fit="contain" src="{{item.imageUrl}}" />
+      <text class="view-card-title">{{item.title}}</text>
+      <text class="view-card-price">
+        <text class="price-char">¥</text> {{item.price}}</text>
+    </view>
+  </block>
+  <view class="footer">
+    <text>- 已经到底了 -</text>
+  </view>
+</view>

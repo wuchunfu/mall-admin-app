@@ -1,0 +1,32 @@
+# 启动端口号
+server:
+  port: 8800
+# 配置数据源
+spring:
+  datasource:
+    username: root
+    password: 123456789
+    url: jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    port: 6379
+    host: localhost
+  mvc:
+    static-path-pattern: /image/**
+  web:
+    resources:
+      static-locations: file:/Users/xuzhicheng/resource/images/
+  banner:
+    image:
+      pixelmode:
+# JWT认证
+jwt:
+  auth:
+    secret: wa12dms12hfd67hzk239ue3e
+    expire: 3600
+#图片保存路径配置
+image:
+  upload:
+    path: /Users/xuzhicheng/resource/images/
+
+

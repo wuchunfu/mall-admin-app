@@ -1,0 +1,8 @@
+<!--pages/result/pay/pay.wxml-->
+<view>
+  <view class="view-pay">
+    <van-icon name="wechat-pay" custom-class="pay-icon" color="#36ab60" size="80px"/>
+    <text class="pay-text">支付成功</text>
+    <van-button custom-class="return-button" bindtap="toMainPage" type="info" round>返回首页</van-button>
+  </view>
+</view>

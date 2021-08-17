@@ -1,0 +1,55 @@
+/* pages/address/list/list.wxss */
+page{
+  background-color: #F2F2F2;
+}
+.view-box{
+  width: 84%;
+  height: auto;
+  margin: 3%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5% 5% 3% 5%;
+}
+.box-top{
+  width: 100%;
+}
+.text-name{
+  font-size: 15px;
+  padding: 3%;
+}
+.text-mobile{
+  font-size: 13px;
+  color: gray;
+}
+.box-tag{
+  padding-left: 2%;
+  font-size: 12px;
+}
+.box-middle{
+  width: 94%;
+  padding: 0 3%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(223, 222, 222);
+}
+.text-address{
+  padding: 3%;
+  font-size: 13px;
+}
+.box-bottom{
+  width: 100%;
+  margin-top: 10px;
+}
+.btn-icon{
+  width: 50%;
+}
+.view-bottom{
+  width: 100%;
+  background-color: white;
+  bottom: 0px;
+  height: 80px;
+  position: fixed;
+}
+.button{
+  width: 94%;
+  margin: 3%;
+}

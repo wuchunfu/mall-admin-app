@@ -1,0 +1,19 @@
+<!--pages/tabbar/mine/mine.wxml-->
+<view>
+  <view class="view-avatar">
+    <van-image round width="4rem" height="4rem"
+      src="{{avatarUrl}}" />
+  </view>
+    <van-grid border="{{false}}" custom-class="grid-order" square="{{true}}">
+      <van-grid-item icon="/images/payment.png" url="/pages/order/order?id=0" text="待付款" />
+      <van-grid-item icon="/images/send.png" url="/pages/order/order?id=1" text="待发货" />
+      <van-grid-item icon="/images/receive.png" url="/pages/order/order?id=2" text="待收货" />
+      <van-grid-item icon="/images/refund.png" url="/pages/order/order?id=3" text="退款/售后" />
+    </van-grid>
+    <van-grid border="{{false}}" custom-class="grid-service" square="{{true}}">
+      <van-grid-item icon="/images/wallet.png" bind:click="sorry" text="钱包" />
+      <van-grid-item icon="/images/star.png" url="/pages/collection/collection" text="收藏" />
+      <van-grid-item icon="/images/address.png" url="/pages/address/list/list" text="收货地址" />
+      <van-grid-item icon="/images/waiter.png" bind:click="sorry" text="客服" />
+    </van-grid>
+</view>

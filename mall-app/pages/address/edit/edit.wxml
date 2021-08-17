@@ -1,0 +1,25 @@
+<!--pages/address/edit/edit.wxml-->
+<view>
+  <view>
+    <van-cell-group>
+      <van-field model:value="{{ name }}" size="large" label="收货人" placeholder="姓名" border="{{ false }}" bind:change="onChange" />
+      <van-field model:value="{{ mobile }}" size="large" label="手机号码" placeholder="手机号" border="{{ false }}" bind:change="onChange" />
+      <van-field value="{{ area }}" size="large" label="选择地区" placeholder="省、市、区" border="{{ false }}" bind:change="onChange"
+      bindtap="showPopup" readonly="{{true}}"/>
+      <van-field model:value="{{ detailedAddress }}" size="large" label="详细地址" placeholder="小区楼栋/乡村名称" type="textarea" maxlength="50" border="{{ false }}" bind:change="onChange" autosize="{{true}}" />
+    </van-cell-group>
+  </view>
+  <view>
+    <van-button type="info" color="linear-gradient(to right, #FF9017, #FD5432)" bindtap="submitForm" round>保存</van-button>
+  </view>
+  <view>
+    <van-popup show="{{ show }}" round custom-style="height: 60%" position="bottom">
+      <van-area area-list="{{ areaList }}" 
+      value="{{area}}"
+      bind:confirm="onClickConfirm"
+      bind:cancel="onClickcancel"
+      bind:change="onClickChange"/>
+    </van-popup>
+  </view>
+</view>
+

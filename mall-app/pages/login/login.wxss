@@ -1,0 +1,18 @@
+/* pages/login/login.wxss */
+.view-login {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: block;
+  padding-top: 30%;
+}
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+.login-button{
+  width: 60%;
+  margin: 16% 20%;
+}

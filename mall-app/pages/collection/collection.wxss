@@ -1,0 +1,22 @@
+/* pages/collection/collection.wxss */
+page{
+  background-color: #F2F2F2;
+}
+.goods-card{
+  width: 94%;
+  height: auto;
+  margin: 2% 3%;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+.view-bottom{
+  width: 100%;
+  background-color: white;
+  bottom: 0px;
+  height: 80px;
+  position: fixed;
+}
+.button{
+  width: 94%;
+  margin: 3%;
+}

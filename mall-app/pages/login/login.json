@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-image": "@vant/weapp/image/index",
+    "van-button": "@vant/weapp/button/index"
+  },
+  "navigationBarTitleText": "登录",
+  "navigationBarTextStyle": "black"
+}

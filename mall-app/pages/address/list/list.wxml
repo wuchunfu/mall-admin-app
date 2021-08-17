@@ -1,0 +1,26 @@
+<!--pages/address/list/list.wxml-->
+<view>
+  <block wx:for="{{address}}">
+    <view class="view-box">
+      <view class="box-top">
+        <text class="text-name">{{item.name}}</text>
+        <text class="text-mobile">{{item.mobile}}</text>
+        <van-tag type="primary" class="box-tag" wx:if="{{item.isDefault === 1}}">
+        默认</van-tag>
+      </view>
+      <view class="box-middle">
+        <van-icon name="location-o" size="14px"/>
+        <text class="text-address">{{item.province}} {{item.city}} {{item.district}} {{item.detailedAddress}}</text>
+      </view>
+      <view class="box-bottom">
+        <van-icon name="edit" id="{{item.id}}" size="20px" bindtap="editAddress" class="btn-icon"/>
+        <van-icon name="delete-o" id="{{item.id}}" bindtap="deleteAddress" size="20px" class="btn-icon"/>
+      </view>
+    </view>
+  </block>
+  <van-dialog id="van-dialog" />
+  <view class="view-bottom">
+    <van-button icon="plus" custom-class="button" round color="linear-gradient(to right, #FF9017, #FD5432)" bind:click="addAddress">添加收货地址</van-button>
+  </view>
+  <view style="height: 100px;"></view>
+</view>

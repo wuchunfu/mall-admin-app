@@ -1,0 +1,43 @@
+/* pages/tabbar/home/home.wxss */
+page{
+  background-color: #F2F2F2;
+}
+.view-card{
+  width: 42%;
+  display: inline-block;
+  height: auto;
+  border-radius: 6px;
+  text-align: center;
+  background-color: white;
+  margin-left: 4%;
+  margin-top: 3%;
+  padding: 2% 1%;
+}
+.view-card-title{
+  display: block;
+  font-size: 26rpx;
+  padding: 1%;
+  color: rgb(26, 25, 25);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 25px;    
+  max-height: 25px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.view-card-price{
+  display: block;
+  font-size: 36rpx;
+  color: red;
+}
+.price-char{
+  font-size: 12px;
+}
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 6% 0% 30% 0%;
+  font-size: 10px;
+  color: rgb(95, 95, 97);
+}

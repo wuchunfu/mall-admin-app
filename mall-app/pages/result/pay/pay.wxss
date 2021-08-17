@@ -1,0 +1,20 @@
+/* pages/result/pay/pay.wxss */
+.view-pay{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100rpx;
+  text-align: center;
+}
+.pay-icon{
+  margin-bottom: 5%;
+}
+.pay-text{
+  font-size: 18px;
+  color: #36ab60;
+}
+.return-button{
+  width: 50%;
+  margin-top: 5%;
+}

@@ -1,0 +1,54 @@
+<!--pages/product/detail/detail.wxml-->
+<view>
+  <view class="goods-image">
+    <van-image height="700rpx" width="100%" src="{{ product.imageUrl }}" />
+  </view>
+  <view class="goods-message">
+    <text class="price"><text class="char">¥</text>{{product.price}}</text>
+    <text class="title">{{product.title}}</text>
+    <view class="data">
+      <text class="amount">库存：{{product.amount}}件</text>
+      <text class="sales">销量：{{product.sales}}件</text>
+    </view>
+  </view>
+  <van-cell-group>
+    <van-cell title="发货" icon="location-o" title-class="goods-cell-title" value="{{product.sendAddress}}" value-class="goods-cell-value"
+      is-link bind:click="sorry" />
+    <van-cell title="保障" icon="after-sale" title-class="goods-cell-title" value="{{product.salesService}}" value-class="goods-cell-value"
+      is-link bind:click="showPopup" />
+    <van-cell title="参数" custom-class="goods-cell" icon="info-o" title-class="goods-cell-title" value="品牌、生产日期"
+      value-class="goods-cell-value" is-link bind:click="sorry" />
+  </van-cell-group>
+  <view class="footer">
+    <text>- 已经到底了 -</text>
+  </view>
+  <van-popup
+  show="{{ show }}"
+  round
+  position="bottom"
+  custom-style="height: 40%"
+  bind:click-overlay="onClose">
+    <view class="popup-view">
+      <view class="popup-title">
+        <text>服务保障</text>
+      </view>
+      <view class="popup-content">
+        <block wx:for="{{salesServiceList}}">
+        <van-icon wx:if="{{item != ''}}" name="passed" size="14px" color="cornflowerblue"/>
+          <text>{{item}}</text>
+        </block>
+      </view>
+      <view class="popup-bottom">
+        <van-button custom-class="popup-button" round color="linear-gradient(to right, #FF9017, #FD5432)" bind:click="onFinish">完成</van-button>
+      </view>
+    </view>
+  </van-popup>
+  <van-toast id="van-toast" />
+  <!-- </view> -->
+  <van-goods-action>
+    <van-goods-action-icon icon="like-o" text="收藏" bind:click="onClickStar" />
+    <van-goods-action-icon icon="cart-o" text="购物车" bind:click="onClickCart" />
+    <van-goods-action-button text="加入购物车" type="warning" bind:click="onClickAddCart" />
+    <van-goods-action-button text="立即购买" bind:click="onClickButton" />
+  </van-goods-action>
+</view>

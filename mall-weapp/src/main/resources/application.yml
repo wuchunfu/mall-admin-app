@@ -1,0 +1,41 @@
+# 启动端口号
+server:
+  port: 9900
+# 配置数据源、静态资源访问
+spring:
+  datasource:
+    username: root
+    password: 123456789
+    url: jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    port: 6379
+    host: localhost
+  security:
+    user:
+      name: weappuser
+      password: 123
+  mvc:
+    static-path-pattern: /image/**
+  web:
+    resources:
+      static-locations: file:/Users/xuzhicheng/resource/images/
+# JWT认证
+jwt:
+  auth:
+    secret: wa12dms12hfd67hzk239ue3e
+    expire: 3600
+# 微信登录凭证校验
+mini:
+  app:
+    api: https://api.weixin.qq.com/sns/jscode2session
+    appId: wx8cb7b0b879986f63
+    secret: e7a2fa8k3cb9dwd4x6s4903a7909ad2a
+
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
+
