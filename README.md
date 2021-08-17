@@ -106,7 +106,7 @@ mall
 #### 1、下载项目
 
 ```
-git clone https://github.com/zchengo/mall
+git clone https://github.com/zchengo/mall.git
 ```
 
 #### 2、初始化项目
