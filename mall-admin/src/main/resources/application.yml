@@ -24,7 +24,7 @@ jwt:
   auth:
     secret: wa12dms12hfd67hzk239ue3e
     expire: 3600
-#图片保存路径配置
+# 图片保存路径配置
 image:
   upload:
     path: /Users/xuzhicheng/resource/images/

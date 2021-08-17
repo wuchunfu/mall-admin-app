@@ -32,10 +32,6 @@ mini:
     appId: wx8cb7b0b879986f63
     secret: e7a2fa8k3cb9dwd4x6s4903a7909ad2a
 
-#mybatis-plus:
-#  configuration:
-#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-
 
 
 

@@ -107,11 +107,8 @@ export default {
     },
     getCaptcha() {
       this.$axios.get('/captcha').then(response => {
-        console.log(response.data.data)
         this.loginForm.key = response.data.data.key
         this.captchaImg = response.data.data.captchaImg
-        console.log(this.captchaImg)
-        console.log(this.loginForm.key)
         this.loginForm.code = ''
       })
     }
