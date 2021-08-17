@@ -91,34 +91,56 @@ Vue后台管理员前端:
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0812/165036_ab4d56b2_5664025.png "app_2.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0812/165048_b6067bdd_5664025.png "app_3.png")
 
+### 目录结构
+
+```
+mall
+├── mall-admin -- 后台管理接口服务
+├── mall-app -- 小程序商城
+├── mall-weapp -- 小程序接口服务
+├── mall-web -- 商城后台管理
+```
 
 ### 安装教程
 
-#### 1. 后端项目（mall）的安装与启动：
+### 1、下载项目
 
 ```
-git clone https://gitee.com/xzchengo/mall.git
+git clone https://github.com/zchengo/mall
+```
+
+### 2、初始化项目
+
+```
+cd mall-admin
 mvn install
-```
-用IDEA开发工具打开mall项目，分别在mall-admin模块和mall-weapp模块中找到主函数MallAdminApplication和MallWeappApplication，点击运行即可（在启动之前，请确保MySQL、Redis服务已经开启，并查看配置文件application.yml是否符合本机配置要求，同时，请确保IDEA安装了Lombok插件）
 
-#### 2. 前端项目（mall-web）的安装与启动：
+cd mall-weapp
+mvn install
 
-```
-git clone https://gitee.com/xzchengo/mall-web.git
+cd mall-app
+npm install
+
+cd mall-web
 npm install
 ```
 
-用IDEA开发工具打开mall-web项目，使用npm安装完成以后，直接点击运行即可（在启动之前，请确保本机已经安装了Node.js和npm，IDEA要安装Vue插件）
+### 3、启动项目
 
-#### 3. 微信小程序（mall-app）的安装与启动：
+使用IDEA开发工具打开mall项目，
 
-```
-git clone https://gitee.com/xzchengo/mall-app.git
-npm install
-```
+#### 运行后端服务接口（mall-admin、mall-weapp）
 
-用微信开发者工具打开mall-app，第一步，点击菜单栏中的【工具】->【构建npm】，第二步，点击右侧【详情】->【本地设置】->勾选【不校验合法域名、web-view....】。最后，点击【编译】。注意：如果是直接【预览】，需要把/utils/request.js中的basePath = http://localhost:9900 中的localhost修改成本机网络的ip地址，如果是使用的是【真机调试】则无需修改。
+在mall-admin模块和mall-weapp模块中找到主函数MallAdminApplication和MallWeappApplication，点击运行即可（在启动运行项目之前，请确保MySQL、Redis服务已经开启，并查看配置文件application.yml是否符合本机配置要求，同时，请确保IDEA安装了Lombok插件）
+
+#### 运行商城后台管理系统（mall-web）
+
+在mall-web模块中，找到package.json，在package.json文件中的第6行，可直接点击运行（在启动之前，请确保本机已经安装了Node.js和npm，IDEA要安装Vue插件）
+
+#### 运行微信小程序（mall-app）
+
+由于IDEA不具备微信小程序运行条件，需要使用微信开发者工具单独打开mall-app。
+第一步，点击菜单栏中的【工具】->【构建npm】，第二步，点击右侧【详情】->【本地设置】->勾选【不校验合法域名、web-view....】。最后，点击【编译】。注意：如果是直接【预览】，需要把/utils/request.js中的basePath = http://localhost:9900 中的localhost修改成本机网络的ip地址，如果是使用的是【真机调试】则无需修改。
 
 
 ### 使用说明
