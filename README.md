@@ -75,21 +75,18 @@ mall是一套商城系统，包括 Spring Boot后端、 Vue后台管理员前端
 
 Vue后台管理员前端:
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0812/161531_6c5cffc0_5664025.png "mall_1.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0812/161545_4dc87245_5664025.png "mall_2.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0812/161556_4d2123e7_5664025.png "mall_3.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0812/161606_d24b7550_5664025.png "mall_4.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0812/161615_52361ee2_5664025.png "mall_5.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0812/161626_989d18e7_5664025.png "mall_6.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0812/161637_20ecb436_5664025.png "mall_7.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0812/161647_19cd9b43_5664025.png "mall_8.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0812/161703_1c09fe65_5664025.png "mall_9.png")
+![输入图片说明](https://github.com/zchengo/mall/blob/main/pictures/1.png?raw=true "1.png")
+![输入图片说明](https://github.com/zchengo/mall/blob/main/pictures/2.png?raw=true "2.png")
+![输入图片说明](https://github.com/zchengo/mall/blob/main/pictures/3.png?raw=true "3.png")
+![输入图片说明](https://github.com/zchengo/mall/blob/main/pictures/4.png?raw=true "4.png")
+![输入图片说明](https://github.com/zchengo/mall/blob/main/pictures/5.png?raw=true "5.png")
+![输入图片说明](https://github.com/zchengo/mall/blob/main/pictures/6.png?raw=true "6.png")
 
 微信小程序用户前端:
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0812/165023_51545df4_5664025.png "app_1.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0812/165036_ab4d56b2_5664025.png "app_2.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0812/165048_b6067bdd_5664025.png "app_3.png")
+![输入图片说明](https://github.com/zchengo/mall/blob/main/pictures/7.png?raw=true "7.png")
+![输入图片说明](https://github.com/zchengo/mall/blob/main/pictures/8.png?raw=true "8.png")
+![输入图片说明](https://github.com/zchengo/mall/blob/main/pictures/9.png?raw=true "9.png")
 
 ### 目录结构
 
